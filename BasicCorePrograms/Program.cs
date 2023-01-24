@@ -14,7 +14,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Heads and Tails \n2.Leap Year or not \n3.Power of 2 \n11.Exit");
+                Console.WriteLine("1.Heads and Tails \n2.Leap Year or not \n3.Power of 2 \n4.Harmonic Number \n11.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -24,9 +24,12 @@ namespace BasicCorePrograms
                     case 2:
                         LeapYear.LeapYearOrNot();
                         break;
-                        case 3:
+                    case 3:
                         PowerOfTwo.TwoPower();
-                            break;
+                        break;
+                    case 4:
+                        HarmonicNumber.HarmonicNo();
+                        break;
                     case 11:
                         flag= false;
                         break;
