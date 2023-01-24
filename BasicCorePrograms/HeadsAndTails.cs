@@ -8,8 +8,10 @@ namespace BasicCorePrograms
 {
     public class HeadsAndTails
     {
-        public static void HeadandTailPercentage(int n)
+        public static void HeadandTailPercentage()
         {
+            Console.WriteLine("Enter the number of times you want to Toss the Coin: ");
+            int n = Convert.ToInt32(Console.ReadLine());
             int headCount=0, tailCount=0;
             Random random= new Random();  
             for(int i=0;i<n;i++)
@@ -28,7 +30,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Tails= {0} times",tailCount);
             double headPercentage = (headCount * 100) / n;
             double tailPercentage = (tailCount * 100) / n;
-            Console.WriteLine("Head Percentage = {0} Tail Percentage = {1}",headPercentage,tailPercentage);
+            Console.WriteLine("Head Percentage = {0}% \nTail Percentage = {1}%",headPercentage,tailPercentage);
         }
 
     }
