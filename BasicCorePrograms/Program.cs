@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Heads and Tails \n2.Leap Year or not \n3.Power of 2 \n4.Harmonic Number \n5.Swap 2 Numbers \n11.Exit");
+                Console.WriteLine("1.Heads and Tails \n2.Leap Year or not \n3.Power of 2 \n4.Harmonic Number \n5.Swap 2 Numbers \n6.Prime Factors of a Number \n11.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -32,6 +33,9 @@ namespace BasicCorePrograms
                         break;
                     case 5:
                         SwapNumbers.SwapTwoNumber();
+                        break;
+                    case 6:
+                        Factors.PrimeFactors();
                         break;
                     case 11:
                         flag= false;
