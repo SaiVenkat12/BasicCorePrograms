@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="EvenorOdd.cs" />
     <Compile Include="Factors.cs" />
+    <Compile Include="GreatestNumber.cs" />
     <Compile Include="HarmonicNumber.cs" />
     <Compile Include="HeadsAndTails.cs" />
     <Compile Include="LeapYear.cs" />
