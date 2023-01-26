@@ -15,7 +15,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Heads and Tails \n2.Leap Year or not \n3.Power of 2 \n4.Harmonic Number \n5.Swap 2 Numbers \n6.Prime Factors of a Number \n7.Quotient And Remainder \n8.Even or Odd \n11.Exit");
+                Console.WriteLine("1.Heads and Tails \n2.Leap Year or not \n3.Power of 2 \n4.Harmonic Number \n5.Swap 2 Numbers \n6.Prime Factors of a Number \n7.Quotient And Remainder \n8.Even or Odd \n9.Vowel or Consonant \n11.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -42,6 +42,9 @@ namespace BasicCorePrograms
                         break;
                     case 8:
                         EvenorOdd.EvenOrOdd();
+                        break;
+                    case 9:
+                        VowelOrConsonant.Vowel();
                         break;
                     case 11:
                         flag= false;
